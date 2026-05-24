@@ -15,7 +15,6 @@ FREEBUFF_MODELS: tuple[FreebuffModel, ...] = (
     FreebuffModel("deepseek/deepseek-v4-pro", "base2-free-deepseek"),
     FreebuffModel("moonshotai/kimi-k2.6", "base2-free-kimi"),
     FreebuffModel("minimax/minimax-m2.7", "base2-free"),
-    FreebuffModel("z-ai/glm-5.1", "base2-free"),
 )
 
 DEFAULT_MODEL = FREEBUFF_MODELS[0]
