@@ -112,6 +112,33 @@ uv run freebuff2api
 python -m pip install -e .
 python main.py
 ```
+## Docker 部署
+
+支持 Docker 容器化部署，推荐用于生产环境。
+
+### 前置条件
+
+- 服务器已安装 Docker 和 Docker Compose
+
+### 快速启动
+
+```bash
+# 1. 克隆项目
+git clone https://github.com/XxxXTeam/freebuff2api.git
+cd freebuff2api
+
+# 2. 配置环境变量
+cp .env.example .env
+# 编辑 .env，填入 FREEBUFF_TOKEN 等配置
+nano .env
+
+# 3. 启动服务（API + Nginx 反向代理）
+docker compose up -d
+
+# 4. 验证
+Base URL: http://服务器IP:8000/v1/
+API KEY就是之前网站申请到的FREEBUFF_TOKEN
+```
 
 ## 调用示例
 
