@@ -1,0 +1,34 @@
+# Git
+.git
+.gitignore
+
+# Python / 依赖
+__pycache__/
+*.pyc
+*.pyo
+.venv/
+*.egg-info/
+build/
+dist/
+
+# 本地配置 & 密钥
+.env
+.env.*
+!env.example
+
+# 开发工具
+tool/
+tests/
+exploitation.js
+
+# 容器相关（本文件自身）
+.dockerignore
+
+# 编辑器 & 系统
+.idea/
+.vscode/
+*.swp
+*.swo
+*~
+.DS_Store
+Thumbs.db
